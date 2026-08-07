@@ -1,0 +1,56 @@
+---
+title: "Maintenance Notes"
+link-external-icon: true
+link-external-newwindow: true
+execute:
+  warning: false
+  error: false
+filters:
+  - lightbox
+lightbox: auto
+---
+## Water Quality
+
+### Sonde and Sensor Failures
+
+No sonde and/or sensor failures during this reporting period 
+
+### Sonde and Sensor Malfunctions
+
+#### Wiper Brush Issues
+
+The wiper brush fell off on the following deployments:
+
+Pellicer Creek:
+
+-   March 4 - March 7, 2026 (Davy Jones SN: 24G103008) central wiper SN: 23G1004212
+
+#### Depth Issues
+
+Ram rod broke inside the sonde tube during the sonde exchange on October 7, 2025, 10:15 at Fort Matanzas. The metal end of the ram rod could not be retrieved and is stuck inside the tube, resting on the pin. The sonde is positioned approximately 3 inches higher than normal for data collected between October 7, 2025, 10:15 through May 1, 2026, 12:00. Depth data does not appear to be influenced by the small change in depth. Piece was finally retrieved on May 1, 2026, 12:00.
+
+#### Broken Data Files
+
+No broken data files during this reporting period
+
+#### Wiped Conductivity and Temperature Sensor Issues
+
+No wiped conductivity and/or temperature sensor issues during this reporting period
+
+#### Chlorophyll Sensor Issues
+
+No wiped conductivity and/or temperature sensor issues during this reporting period
+
+#### Dissolved Oxygen Sensor Issues
+
+No wiped dissolved oxygen sensor issues during this reporting period
+
+#### Telemetry
+Research staff installed new telemetry equipment including a Storm 3 data logger, data output adapter, wiring, and battery on March 4, 2026. Missing all water quality data on March 4, 2026, 13:15; attributed to attaching EXO cable to data sonde and completing the new telemetry install. The station is now actively transmitting data.
+
+## Weather Station
+
+### PAR Sensor Issues
+The weather station has been experiencing elevated night-time PAR values. The elevated readings occur intermittently throughout the quarter, but the frequency increased and included elevated daytime readings beginning on September 18, 2025, 21:30 and ending on February 27, 2026, 9:30. The cause of the elevated readings was unknown. The PAR sensor was evaluated by Campbell Scientific and replaced under warranty.
+
+A new PAR sensor was installed on February 27, 2026 and appears to be working properly.
