@@ -42,7 +42,7 @@ book:
 
   page-footer:
       left: |
-        The data used in this report was last updated in August 2026.
+        The data used in this report was last updated in November 2026.
       right: |
         Built with <a href="https://quarto.org/">Quarto</a>.
 

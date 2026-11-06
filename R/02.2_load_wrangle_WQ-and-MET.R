@@ -12,35 +12,35 @@ pi_1 <- SWMPr::import_local(path = here::here('data',
                                station_code = 'gtmpiwq') %>% 
         SWMPr::qaqc(qaqc_keep = c('0', '2', '3', '4', '5'))
 
-pi <- subset(pi_1, subset = '2026-07-01 0:00', operator = '<')    
+pi <- subset(pi_1, subset = '2026-10-01 0:00', operator = '<')    
     
 ss_1 <- SWMPr::import_local(path = here::here('data',
                                                  'swmp'), 
                                station_code = 'gtmsswq') %>% 
   SWMPr::qaqc(qaqc_keep = c('0', '2', '3', '4', '5')) 
 
-ss <- subset(ss_1, subset = '2026-07-01 0:00', operator = '<')
+ss <- subset(ss_1, subset = '2026-10-01 0:00', operator = '<')
 
 fm_1 <- SWMPr::import_local(path = here::here('data',
                                                  'swmp'), 
                                station_code = 'gtmfmwq', trace = TRUE) %>% 
   SWMPr::qaqc(qaqc_keep = c('0', '2', '3', '4', '5'))
 
-fm <- subset(fm_1, subset = '2026-07-01 0:00', operator = '<')
+fm <- subset(fm_1, subset = '2026-10-01 0:00', operator = '<')
 
 pc_1 <- SWMPr::import_local(path = here::here('data',
                                                  'swmp'), 
                                station_code = 'gtmpcwq') %>% 
   SWMPr::qaqc(qaqc_keep = c('0', '2', '3', '4', '5'))
 
-pc <- subset(pc_1, subset = '2026-07-01 0:00', operator = '<')
+pc <- subset(pc_1, subset = '2026-10-01 0:00', operator = '<')
 
 MET_1 <- SWMPr::import_local(path = here::here('data',
                                              'swmp'), 
                                 station_code = 'gtmpcmet', trace = TRUE) %>% 
   SWMPr::qaqc(qaqc_keep = c('0', '2', '3', '4', '5'))
 
-MET <- subset(MET_1, subset = '2026-07-01 0:00', operator = '<')
+MET <- subset(MET_1, subset = '2026-10-01 0:00', operator = '<')
 
 # 02 wrangle data for merging ------------------------------------------------
 

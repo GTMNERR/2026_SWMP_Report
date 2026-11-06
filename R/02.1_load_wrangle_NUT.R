@@ -77,10 +77,10 @@ fm_nut_1 <- swmp_gtmfmnut %>% SWMPr::qaqc(qaqc_keep = c('0', '2', '3', '4', '5')
 pc_nut_1 <- swmp_gtmpcnut %>% SWMPr::qaqc(qaqc_keep = c('0', '2', '3', '4', '5'))
 
 # filter timestamp so the file ends at the quarter
-pi_nut <- subset(pi_nut_1, subset = '2026-07-01 0:00', operator = '<')
-ss_nut <- subset(ss_nut_1, subset = '2026-07-01 0:00', operator = '<')
-fm_nut <- subset(fm_nut_1, subset = '2026-07-01 0:00', operator = '<')
-pc_nut <- subset(pc_nut_1, subset = '2026-07-01 0:00', operator = '<')
+pi_nut <- subset(pi_nut_1, subset = '2026-10-01 0:00', operator = '<')
+ss_nut <- subset(ss_nut_1, subset = '2026-10-01 0:00', operator = '<')
+fm_nut <- subset(fm_nut_1, subset = '2026-10-01 0:00', operator = '<')
+pc_nut <- subset(pc_nut_1, subset = '2026-10-01 0:00', operator = '<')
 
 # remove unfiltered data objects
 rm(swmp_gtmpinut, 

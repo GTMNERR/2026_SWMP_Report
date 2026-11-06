@@ -81,7 +81,7 @@ MET |>
 ## MONTHLY ----
 
 MET |> 
-  filter(datetimestamp > '2026-01-01 00:15'& datetimestamp < '2026-07-01 00:00') %>%
+  filter(datetimestamp > '2026-01-01 00:15'& datetimestamp < '2026-11-01 00:00') %>%
   # mutate(date = as.Date(datetimestamp),
   #        month = lubridate::month(date, label = T)) %>% 
   mutate(date = lubridate::date(datetimestamp),
@@ -110,7 +110,7 @@ MET |>
 fun_in <- function(x) sum(x, na.rm = TRUE)
 
 MET |> 
-  filter(datetimestamp > '2026-01-01 00:15' & datetimestamp < '2026-07-01 00:00') %>%
+  filter(datetimestamp > '2026-01-01 00:15' & datetimestamp < '2026-11-01 00:00') %>%
   aggreswmp(by = "days", FUN = fun_in, params = "totprcp") %>% 
   filter(totprcp >= 1) %>% 
   mutate(date = as.Date(datetimestamp),
@@ -147,7 +147,7 @@ MET |>
 fun_in <- function(x) sum(x, na.rm = TRUE)
 
 MET |>
-  filter(datetimestamp > '2026-01-01 00:15'& datetimestamp < '2026-07-01 00:00') %>% 
+  filter(datetimestamp > '2026-01-01 00:15'& datetimestamp < '2026-11-01 00:00') %>% 
   aggreswmp(by = "hours", FUN = fun_in, params = "totprcp") %>% 
   rename(intensity = totprcp) %>% 
   mutate(date = lubridate::date(datetimestamp),
@@ -326,7 +326,7 @@ The plot below is interactive. Clicking on elements in the legend (months) will 
 
 ggplotly(
 MET %>% 
-  filter(datetimestamp > '2026-01-01 00:15'& datetimestamp < '2026-07-01 00:00') %>% 
+  filter(datetimestamp > '2026-01-01 00:15'& datetimestamp < '2026-11-01 00:00') %>% 
   select(datetimestamp, totpar) %>% 
   mutate(month = lubridate::month(datetimestamp, label = T), 
          day = lubridate::day(datetimestamp),
