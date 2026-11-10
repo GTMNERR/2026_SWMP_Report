@@ -12,14 +12,30 @@ lightbox: auto
 ## Water Quality
 
 ### Sonde and Sensor Updates
-Chlorophyll units were changed from µg/L to RFU beginning on 01/01/2025 and continuing through presently collected data. Chlorophyll data collected prior to 01/01/2025 are still reported in µg/L. The CDMO is currently working on changing past data to RFU. If downloading chlorophyll data from the CDMO please pay close attention to reported units.
+Chlorophyll (Total Algae sensor) units were changed from µg/L to RFU beginning on January 1, 2025 and continuing through presently collected data. Chlorophyll data collected prior to July 1, 2025 have been removed from the CDMO website. The CDMO is currently working on changing past data to RFU. If downloading data sonde chlorophyll data from the CDMO please understand that some of the data may be missing until the updates have been made.
 
 ### Sonde and Sensor Failures/Malfunctions
 
-There was a sonde (Sparrow, SN:24G103007) failure on 05/28/2026 13:15 at Pellicer Creek. Unable to connect to or turn on the sonde. Sensors were removed and post deployment procedures were performed on another data sonde. All sensors were in good working condition except for Chlorophyll/Total Algae Sensor (SN: 24H100409). Missing raw/bin deployment file for the gtmpcwq052826 deployment. Sonde was sent to YSI for repairs. YSI determined that the power/comm board stopped functioning, the depth sensor was not reading correctly, and the depth connector on the main board was malfunctioning. The sonde was repaired under warranty.
+There was a sonde (Sparrow, SN:24G103007) failure on May 28, 2026 13:15 at Pellicer Creek. Unable to connect to or turn on the sonde. Sensors were removed and post deployment procedures were performed on another data sonde. All sensors were in good working condition except for Chlorophyll/Total Algae Sensor (SN: 24H100409). Missing raw/bin deployment file for the gtmpcwq052826 deployment. Sonde was sent to YSI for repairs. YSI determined that the power/comm board stopped functioning, the depth sensor was not reading correctly, and the depth connector on the main board was malfunctioning. The sonde was repaired under warranty.
 
 #### Datetimestamp Recording Issues
-There were data sonde (Dorian, SN: 20C201711) datetimestamp recording errors throughout most of the 04/15/2026 deployment at San Sebastian. Seconds were not recorded at 00 but ranged from 01 - 40 seconds. Sonde may be experiencing issues with internal clock. 
+
+The following deployments experienced data sonde datetimestamp recording errors in 2026:
+
+Pine Island:
+
+-  August 12 - August 27, 2026 (Matthew, SN:20H100464) timestamps were off by approximately 5 minutes and data file started at 14:50 instead of 05:00.
+
+San Sebastian:
+
+-  April 15 - May 1, 2026 (Dorian, SN: 20C201711) seconds were not recorded at 00 but ranged from 01 - 40 seconds. 
+-  August 12 - August 27, 2026 (Dorian, SN:20H100466) timestamps were off by approximately 5 minutes and data file started at 14:35 instead of 05:00.
+  
+Fort Matanzas:
+
+-  June 16 - July 1, 2026 (Barbossa, SN:24G103006) timestamps were off by 47 seconds.
+-  August 12 - August 27, 2026 (Barbossa, SN:24G103006) timestamps were off by approximately 5 minutes and data file started at 14:54 instead of 05:00.
+
 #### Wiper Brush Issues
 
 The wiper brush fell off on the following deployments:
@@ -28,31 +44,82 @@ Pellicer Creek:
 
 -   March 4 - March 7, 2026 (Davy Jones, SN: 24G103008) central wiper SN: 23G1004212
 
-#### Depth Issues
-Ram rod broke inside sonde tube during the sonde exchange on 10/07/2025 10:15 at Fort Matanzas. The metal end of the ram rod could not be immediately retrieved and was stuck inside resting on the pin at the bottom of the sonde tube. The sonde is positioned approximately 3 inches higher than normal for data collected between 01/01/2026 00:00 through 05/01/2026 12:00. Depth data does not appear to be influenced by the small change in depth. Piece was finally retrieved for data beginning on 05/01/2026 12:15.
+#### Depth/Level Issues
+Ram rod broke inside sonde tube during the sonde exchange on October 7, 2025 10:15 at Fort Matanzas. The metal end of the ram rod could not be immediately retrieved and was stuck inside resting on the pin at the bottom of the sonde tube. The sonde is positioned approximately 3 inches higher than normal for data collected between January 1, 2026 00:00 through May 1, 2026 12:00. Depth data does not appear to be influenced by the small change in depth. Piece was finally retrieved for data beginning on 05/01/2026 12:15.
+
+Depth/Level (Level PC station only) was calibrated with an incorrect latitude for several deployments. Level data were corrected for Pellicer Creek. Depth data was not corrected for Pine Island, San Sebastian, and Fort Matanzas. The following list of deployments were affected:
+
+Pine Island:
+
+-  June 19 - September 9, 2026 (Irma, SN:20H100465, Matthew, SN:20H100464) the latitude was set to 29 but should have been 30. All depth data flagged <0> (CSM). Depth data are 2.22mm (1 x 2.22mm) or 0.00222 m lower than they should be. Data could be corrected by adding 0.00222 m to the depth data collected within this range.
+
+San Sebastian:
+
+-  June 19 - September 9, 2026 (Dorian, SN:20H100466, Nautilus, SN:13H102686) the latitude was set to 45 but should have been 29. All depth data flagged <0> (CSM). Depth data are 35.52 mm (16 x 2.22mm) or 0.03552 m higher than they should be. Data could be corrected by subtracting 0.03552 m to the depth data collected within this range.
+
+Fort Matanzas:
+
+-  June 16 - July 30, 2026 (Barbossa, SN:24G103006) the latitude was set to 45 but should have been 29. All depth data flagged <0> (CSM). Depth data are 35.52 mm (16 x 2.22mm) or 0.03552 m higher than they should be. Data could be corrected by subtracting 0.03552 m to the depth data collected within this range.
+
+-  July 30 - August 12, 2026 (Spoonbill, SN:15E101711) the latitude was set to 30 but should have been 29. All depth data flagged <0> (CSM). Depth data are 2.22 mm (1 x 2.22mm) or 0.00222 m higher than they should be. Data could be corrected by subtracting 0.00222 m to the depth data collected within this range.
+
+-  August 12 - August 27, 2026 (Barbossa, SN:24G103006) the latitude was set to 45 but should have been 29. All depth data flagged <0> (CSM). Depth data are 35.52 mm (16 x 2.22mm) or 0.03552 m higher than they should be. Data could be corrected by subtracting 0.03552 m to the depth data collected within this range.
+
+-  September 9 - September 29 , 2026 (Egret, SN:15E101700 ) the latitude was set to 45 but should have been 29. All depth data flagged <0> (CSM). Depth data are 35.52 mm (16 x 2.22mm) or 0.03552 m higher than they should be. Data could be corrected by subtracting 0.03552 m to the depth data collected within this range.
+
+
+Pellicer Creek:
+
+-  June 29 - July 14, 2026 (Davy Jones, SN:24G103008) the latitude was set to 45 but should have been 29. Level data are 35.52 mm (16 x 2.22mm) or 0.03552 m higher than they should be. All level data were corrected by subtracting 0.03552 m. 
+
+-  July 14 - July 21, 2026 (Nemo, SN:24G103008) the latitude was set to 45 but should have been 29. Level data are 35.52 mm (16 x 2.22mm) or 0.03552 m higher than they should be. All level data were corrected by subtracting 0.03552 m. 
+
+-  July 21 - August 12, 2026 (Davy Jones, SN:24G103008) the latitude was set to 45 but should have been 29. Level data are 35.52 mm (16 x 2.22mm) or 0.03552 m higher than they should be. All level data were corrected by subtracting 0.03552 m. 
+
+-  August 12 - August 25, 2026 (Sparrow, SN:24G103007) the latitude was set to 45 but should have been 29. Level data are 35.52 mm (16 x 2.22mm) or 0.03552 m higher than they should be. All level data were corrected by subtracting 0.03552 m. 
+
+-  August 25 - August 31, 2026 (Davy Jones, SN:24G103008) the latitude was set to 45 but should have been 29. Level data are 35.52 mm (16 x 2.22mm) or 0.03552 m higher than they should be. All level data were corrected by subtracting 0.03552 m. 
+
+-  September 9 - September 17, 2026 (Davy Jones, SN:24G103008) the latitude was set to 45 but should have been 29. Level data are 35.52 mm (16 x 2.22mm) or 0.03552 m higher than they should be. All level data were corrected by subtracting 0.03552 m.
 
 #### Broken Data Files
 The following is a list of deployments that experienced broken data files and all had a sensor malfunctions:
 
--   Pellicer Creek: Davy Jones (SN: 24H100562) - Wiped CT sensor malfunction. Sensor connecting and disconnecting during post cal. Data file split into three files after retrieval on 04/29/2026 between 13:30 and 14:00 timestamps for 04/15/2026 10:45 deployment; 
--   Fort Matanzas: Egret (SN: 24G104084) - Missing pH sensor readings; invalid sensor location (Port 1) at post check. Data file split after retrieval on 06/17/2026 between 12:45 and 13:00;
+Fort Matanzas:
 
--   Pellicer Creek: Davy Jones (SN: 24H100562) - Possible central wiper malfunction, data file split on 07/12/2026 13:45, missing wiper voltage values throughout deployment
+-  June 4 - June 16, 2026 (Egret, SN:24G104084) missing pH sensor readings during deployment. There was also an invalid sensor location (Port 1) at post check. Data file split after retrieval.
+
+-  July 1 - July 14, 2026 (Egret, SN:24G104084) data file split into three files after retrieval. Possibly attributed to a data sonde or dissolved oxygen sensor malfunction. Dissolved oxygen data was missing while sensor was deployed but was collected during pre- and post-deployment data checks. Bluetooth connection also dropped out throughout post deployment checks and KOR issued an invalid sensor location (port 1) warning.
+
+-  July 30 - August 12, 2026 (Spoonbill, SN:15E101711) - Data file split into seven files likely attributed to sonde malfunction. Data sonde displayed an SD card failure warning upon connecting for post deployment checks. Central wiper and wiped conductivity/temperature sensors disconnected during deployment. Data sonde also displayed an invalid sensor location for wiped conductivity/temperature sensor at post checks.
+
+Pellicer Creek:
+
+-  April 15 -  April 29, 2026 (Davy Jones, SN:24H100562) Wiped CT sensor malfunction. Sensor connecting and disconnecting during post cal. Data file split into three files after retrieval.
+
+-  July 14 - July 27, 2026 (Nemo, SN:24G103008) possible central wiper malfunction. Data file split and there were missing wiper (SN#20H100788) voltage values throughout deployment.
+
+-  July 21 - August 12, 2026 (Davy Jones, SN:24H100562) Data file split into two files. Sonde also experienced central wiper and chlorophyll sensor malfunctions. KOR software displayed an invalid sensor address warning upon connecting to data sonde for post deployment checks. Chlorophyll data is missing from second half of the data file. Chlorophyll sensor was moved to a new port location on the data sonde to complete post deployment checks.
 
 #### Chlorophyll Sensor Issues
 
--   San Sebastian: Megalops (SN: 16J102351) - Chlorophyll probe broke off inside bulkhead of data sonde. Sensor removed and trashed. Megalops removed from rotation and replaced with Nautilus.
+San Sebastian:
+
+-  March 27 - April 15, 2026 (Megalops, SN: 16J102351) chlorophyll probe broke off inside bulkhead of data sonde. Sensor removed and trashed. Megalops removed from rotation and replaced with Nautilus.
 
 #### Turbidity Issues
--   Fort Matanzas: Barbossa (SN: 16D102988) - Turbidity sensor causing red light and shutdown of data sonde when connected during post deployment checks on 05/14/2026 08:00.
+
+Fort Matanzas:
+
+-  May 14 - June 4, 2026 (Barbossa, SN: 16D102988) turbidity sensor causing red light and shutdown of data sonde when connected during post deployment checks on 05/14/2026 08:00.
 
 #### Telemetry
 Research staff installed new telemetry equipment including a Storm 3 data logger, data output adapter, wiring, and battery on March 4, 2026. Missing all water quality data on March 4, 2026, 13:15; attributed to attaching EXO cable to data sonde and completing the new telemetry install. The station is now actively transmitting data.
 
-A new EXO template was installed on 04/15/2026 10:45 to change chlorophyll units from µg/L to RFU for real-time telemetry data collected at Pellicer Creek. Telemetry data now permanently receives RFU data.
+A new EXO template was installed on April 15, 2026 10:45 to change chlorophyll units from µg/L to RFU for real-time telemetry data collected at Pellicer Creek. Telemetry data now permanently receives RFU data.
 
 #### Differential Leveling
-The GTM research staff completed the annual task of measuring the elevation of the sonde in Pellicer Creek 06/24/2026 09:06-09:42 and 06/25/2026 08:34-08:53. The team measured the change in height from a reference benchmark and three positions on the piling holding the sonde. The orthometric height of the sonde tube pin position is used as the station offset when calibrating the depth sensor for the sonde. The orthometric heights of the positions can also be used to determine if the piling holding the sonde is moving vertically. The data sonde depth/level sensor offset was updated to -1.073 m from -1.068 m. Corrected all level data collected 06/25/2026 09:00 through 06/29/2026 13:45 to match new offset. 
+The GTM research staff completed the annual task of measuring the elevation of the sonde in Pellicer Creek 06/24/2026 09:06-09:42 and 06/25/2026 08:34-08:53. The team measured the change in height from a reference benchmark and three positions on the piling holding the sonde. The orthometric height of the sonde tube pin position is used as the station offset when calibrating the depth sensor for the sonde. The orthometric heights of the positions can also be used to determine if the piling holding the sonde is moving vertically. The data sonde depth/level sensor offset was updated to -1.073 m from -1.068 m. Corrected all level data collected June 25, 2026 09:00 - June 29, 2026 13:45 to match new offset. 
 
 ## Weather Station
 
